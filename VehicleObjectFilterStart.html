@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle Filter</title>
+</head>
+
+<body>
+    <div>
+        Display By:
+        <br>
+        <input type="radio" name="rbFilter" value="All" checked onclick="displayVehicles()" />All
+        <input type="radio" name="rbFilter" value="Insured" onclick="displayVehicles() " />Insured
+        <input type="radio" name="rbFilter" value="Not Insured" onclick="displayVehicles() " />Not Insured
+    </div>
+
+    <br>
+    <hr>
+
+    <div id="dVehicles">
+        <!-- vehicles display here -->
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        Filter By: <input type="text" id="tbFilter" />
+        <br><br>
+        <input type="button" value="Filter By Make" onclick="filterByMake()" />
+        <input type="button" value="Filter By Model" onclick="filterByModel()" />
+        <input type="button" value="Filter By Color" onclick="filterByColor()" />
+        <input type="button" value="Query By License Plate" onclick="filterByPlate()" />
+    </div>
+
+    <br>
+    <hr>
+    <div id="dFilteredOutput">
+
+    </div>
+
+
+
+    <script src="VehicleObject.js"></script>
+</body>
+
+</html>
